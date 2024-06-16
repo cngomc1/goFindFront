@@ -1,0 +1,40 @@
+@media screen and (min-width:200px){
+	
+}
+nav{
+	display:flex;
+	width:100%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: "#fffff";
+	padding: 12px 100px;
+}
+nav ul{
+	display: flex;
+}
+ul{
+	list-style: none;
+}
+ul li {
+	margin-right:10px;
+}
+ul li a{
+	font-size:16px;
+	color: #000000;
+	text-decoration:none;
+	padding:11px 15px;
+	border-radius: 5px;
+	transition:0.3s ease;
+}
+ul li .active{
+	background-color: #efefef;
+}
+ul li a:hover{
+	background-color: #efefef;
+}
+ .option{
+	width:25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.container{
+  width:500px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 200px;
+  background: #fff;
+  padding-bottom: 30px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+}
+.text{
+  color: #2A0087;
+  font-size: 48px;
+  font-weight: 700;
+}
+.underline{
+  width: 61px;
+  height: 6px;
+  background: #3c009d;
+  border-radius: 9px;
+}
+
+.inputs{
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.input{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 480px;
+  height: 80px;
+  background: #eaeaea;
+  border-radius: 6px;
+}
+
+.input input{
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+}
+.submit-container{
+  display: flex;
+  gap: 30px;
+  margin: 60px auto;
+  align-items: center;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background: #4C00B4;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.gray{
+  background: #eaeaea;
+  color: #676767;
+}
+
+
+/*Home page*/
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #333;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --white-color: #fff;
+  --gray-color: #777;
+  --font-family: 'Arial', sans-serif;
+  --transition-speed: 0.3s;
+  --orange:#f80;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+span{
+  color:var(--orange);
+}
+
+header {
+  position: fixed;
+  top: 0;left: 0;right: 0;
+  z-index: 1000;
+  display: flex;
+  background-color: #fff;
+  box-shadow:0.5rem 1rem rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #666;
+  height: 40px;
+}
+header .logo i{
+  padding-right: .5rem;
+  color:var(--orange);
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  font-size: 14px;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+}
+
+header nav ul li a:hover{
+  color:var(--orange)
+}
+
+#menu-bar{
+  cursor: pointer;
+  color:#333;
+  display: none;
+}
+
+main {
+  padding: 20px;
+  
+}
+
+
+.hero {
+  text-align: center;
+  align-items: center;
+  background-color: #e2e2e2;
+  padding: 50px 20px;
+  background-size: 100%;
+  background-position: center;
+  background-image: url(../public/carhome.jpg);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+}
+.services{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.service{
+  width: 30%;
+  margin: 10px;
+  background: #fff;
+  opacity: 0.7;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+form{
+  justify-content: space-between;
+}
+
+form input[type="text"] {
+  width:44%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius:2px;
+}
+
+.stolen-device 
+form input[type="text"] {
+  width:90%;
+}
+
+form input[type="date"]{
+  width:50%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius:2px;
+}
+
+form input[type="time"],[type="number"]{
+  border-radius:2px;
+  width:27%;
+  margin-right: 10px;
+}
+
+form button {
+  margin-top: 20px ;
+  padding: 10px 20px;
+}
+
+button {
+  background-color:var(--orange);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.stolen-device{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.covoiturage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.colocation{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.image{
+  width: 40%;
+  padding:50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-position: center;
+}
+.objet{
+  background-image:url('../public/ol-smartphone.jpg') ;
+  background-size: 100%;
+}
+.voyage{
+  background-image:url('../public/image\(0\).jpg') ;
+  background-size: 100%;
+}
+.location{
+  background-image:url('../public/colocation.jpg') ;
+  background-size: 100%;
+}
+
+.otherside{
+  width:60%;
+  flex-direction: column;
+  padding: 30px ;
+}
+.otherside form{
+  flex-direction: column;
+}
+.astuce{
+  padding: 20px;
+  background-color: #e2efe2;
+}
+
+.astuce .service{
+  width: 28%;
+  background: transparent;
+  text-align: center;
+}
+
+.cherche{
+  background: var(--orange);
+  border-radius: 50px;
+  font-size: 10px;
+  margin: 20px auto;
+}
+.propose{
+  background: #4CAF50;
+  border-radius: 50px;
+  font-size: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 2px;
+  background-color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+/*--Title--*/
+.title{
+  padding-top: 20px;
+  font-size: 26px;
+  color: var(--orange);
+}
+
+/*-media queries-*/
+@media(max-width:991px){
+  header nav ul li a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #333;
+  }
+  header nav ul li {
+      margin-left: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service {
+      width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  .service {
+      width: 100%;
+  }
+ 
+}
+
+@media  (min-width: 991px) {
+.image{
+  width: 40%;
+  padding:100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+}
